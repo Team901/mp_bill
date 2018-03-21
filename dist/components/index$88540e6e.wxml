@@ -1,0 +1,28 @@
+<import src="card$77c2acef" />
+<template name="index$88540e6e">
+  <view class="_div data-v-63c277e2 container" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-63c277e2 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-63c277e2 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-63c277e2 userinfo-nickname">
+        <template data="{{...$root[$kk+'0'], $root}}" is="card$77c2acef"></template>
+      </view>
+    </view>
+    <view class="_div data-v-63c277e2 usermotto">
+      <view class="_div data-v-63c277e2 user-motto">
+        <template data="{{...$root[$kk+'1'], $root}}" is="card$77c2acef"></template>
+      </view>
+    </view>
+    <form class="_form data-v-63c277e2 form-container">
+      <view class="_ul data-v-63c277e2">
+        <view wx:for="{{appList}}" wx:for-index="i" wx:for-item="app" class="_li data-v-63c277e2">
+          <view class="_div data-v-63c277e2 appIcon" bindtap="handleProxy" data-eventid="{{'1-'+i}}" data-comkey="{{$k}}">
+            <image class="_img data-v-63c277e2" src="{{app.imgSrc}}" background-size="cover"></image>
+          </view>
+          <view class="_div data-v-63c277e2 appName">
+            <label class="_span data-v-63c277e2">{{app.name}}</label>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+</template>

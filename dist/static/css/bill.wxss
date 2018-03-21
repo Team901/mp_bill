@@ -1,0 +1,48 @@
+
+.btnBox {
+  margin: 10rpx;
+  height: 100rpx;
+}
+.btnBox .btn {
+  display: inline-block;
+  float: right;
+  margin: 10rpx 15rpx;
+}
+#container {
+  font-size: 32rpx;
+}
+#inputBox,
+#itemListBox,
+#resListBox {
+  box-shadow: 0 0 200rpx rgba(68, 68, 68, 0.3);
+  width: 86%;
+  margin: 5%;
+  padding: 2%;
+}
+#inputBox ._ul,
+#itemListBox ._ul,
+#resListBox ._ul {
+  margin-left: 32rpx;
+}
+#inputBox ._textarea {
+  width: 94%;
+  padding: 3%;
+  border: 2rpx solid #ddd;
+}
+#itemListBox ._li {
+  line-height: 70rpx;
+}
+#itemListBox ._li .btn {
+  display: inline-block;
+  float: right;
+  margin: 0 15rpx;
+  font-size: 24rpx;
+}
+#itemListBox ._li .typeBtn {
+  border: 2rpx solid #ddd;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding: 0 25rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+}
